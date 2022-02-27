@@ -8,7 +8,13 @@ int main()
 	int T[n];
 	T[0]=0;
 	T[1]=1;
-	cin>>n;
+    	while(!(cin>>n))
+    	{
+
+        	cout << "Błąd podaj liczbę";
+        	cin.clear();
+       		cin.ignore(123, '\n');
+  	}
 
 	int sum=T[0]+T[1];
 
